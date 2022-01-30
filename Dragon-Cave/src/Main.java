@@ -7,14 +7,14 @@ public class Main {
         while(!toggleWinOrLose) {
             System.out.println("You are in a land full of dragons.\nIn front of you, you see two caves.\nIn one cave, the dragon is friendly and will share his treasure with you.\nThe other dragon is greedy and hungry and will eat you on sight. Which Cave will you go in (0 , 1, 2)");
             Scanner getInput = new Scanner(System.in);
-//        int input = Integer.parseInt(getInput.nextLine()); also works
+//        int input = Integer.parseInt(getInput.nextLine()); also works creative work around before I discovered nextInt();
             int input = getInput.nextInt();
             if (input == 1) {
-                System.out.println("You entered cave 1 and have been eaten by the dragon\nWould you like to play again? (yes or no)");
+                System.out.println("You entered cave 1 and have been eaten by the dragon!\nWould you like to play again? (yes or no)");
             } else if (input == 2) {
                 System.out.println("You entered cave 2 and have found treasure!\nWould you like to play again? (yes or no)");
             } else if (input == 0) {
-                System.out.println("You exited the cave.");
+                System.out.println("You exited the cave.\nWould you like to play again? (yes or no)");
             }
             playAgain = getInput.next();
             if (!playAgain.equals("yes")) {
