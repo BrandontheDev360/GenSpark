@@ -16,19 +16,20 @@ public class GuessingGame {
         while (!toggleWinOrLose) {
             System.out.printf("Well, %s, I am thinking of a number between 1 and 20.\nTake a guess %s.\n", inputName, inputName);
             randomNumber = rand.nextInt(20);
-            while (guess != randomNumber) {
+            while (guess != randomNumber || numberOfTries >=10) {
                 guess = getInput.nextInt();
                 if (guess < randomNumber) {
                     System.out.printf("Your guess %d was too low.\n", guess);
                     numberOfTries++;
-                } else if (numberOfTries == 10) {
-                    System.out.printf("GAME OVER %s you had 10 guesses.\nMWAHAHAHA I have taken your soul %s!", inputName, inputName);
-                    toggleWinOrLose = true;
                 } else if (guess > randomNumber) {
                     System.out.printf("Your guess %d was too high.\n", guess);
                     numberOfTries++;
                 } else {
                     System.out.printf("Good job, %s! You guessed my number in less than 10 guesses!\nWould you like to play again %s? (yes or no)\n", inputName, inputName);
+                }
+                if (numberOfTries >= 10) {
+                    System.out.printf("GAME OVER %s you had 10 guesses.\nMWAHAHAHA I have taken your soul %s!", inputName, inputName);
+                    toggleWinOrLose = true;
                 }
             }
             playAgain = getInput.next();
