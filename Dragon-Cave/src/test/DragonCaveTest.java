@@ -17,7 +17,7 @@ public class DragonCaveTest {
 
     @Test
     public void playerInput() {
-        assertAll("Different Caves",
+        assertAll("Different Player Inputs",
             () -> assertEquals("You entered cave 1 and have been eaten by the dragon!\nWould you want to play again? (yes or no)", DragonCave.playerInput(1), "Wrong Input"),
             () -> assertEquals("You entered cave 2 and have found treasure!\nWould you want to play again? (yes or no)", DragonCave.playerInput(2), "Wrong Input"),
             () -> assertEquals("You exited the cave.\nWould you want to play again? (yes or no)", DragonCave.playerInput(0), "Wrong Input"));
