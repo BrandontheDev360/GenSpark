@@ -2,7 +2,7 @@ import java.util.Objects;
 import java.util.Scanner;
 import java.util.Random;
 
-public class Main {
+public class GuessingGame {
     public static void main (String[] args) {
         System.out.println("Hello! What is your name fellow traveler?\nSign your soul away here...");
         Scanner getInput = new Scanner(System.in);

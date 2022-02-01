@@ -13,7 +13,9 @@ public class DragonCave {
             Scanner getInput = new Scanner(System.in);
             System.out.println(startGame());
             try {
-                System.out.println(playerInput(Integer.parseInt(getInput.nextLine())));
+                // another cool way of doing it
+//                System.out.println(playerInput(Integer.parseInt(getInput.nextLine())));
+                System.out.println(playerInput(getInput.nextInt()));
                 playAgain(getInput.next());
             } catch(Exception e) {
                 System.out.println("You must enter an Integer. GAME OVER.");
