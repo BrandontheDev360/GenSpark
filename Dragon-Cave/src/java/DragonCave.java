@@ -13,12 +13,13 @@ public class DragonCave {
             Scanner getInput = new Scanner(System.in);
             System.out.println(startGame());
             try {
-                // another cool way of doing it
-//                System.out.println(playerInput(Integer.parseInt(getInput.nextLine())));
+                // other cool ways of doing it
+                // System.out.println(playerInput(Integer.parseInt(getInput.nextLine())));
+                // System.out.println(playerInput(Integer.parseInt(getInput.next())));
                 System.out.println(playerInput(getInput.nextInt()));
                 playAgain(getInput.next());
             } catch(Exception e) {
-                System.out.println("You must enter an Integer. GAME OVER.");
+                System.out.println("You must choose cave 0, 1, 2. GAME OVER.");
                 toggle = false;
             }
         }
