@@ -14,8 +14,8 @@ public class GuessingGame {
         System.out.println(startGame());
         String inputName = getInput.nextLine();
         while (!toggleWinOrLose) {
+            System.out.printf("Well, %s, I am thinking of a number between 1 and 20.\nTake a guess %s.\n", inputName, inputName);
             try {
-                System.out.printf("Well, %s, I am thinking of a number between 1 and 20.\nTake a guess %s.\n", inputName, inputName);
                 randomNumber = rand.nextInt(20);
                 while (guess != randomNumber || numberOfTries >= 10) {
                     guess = getInput.nextInt();
@@ -33,11 +33,13 @@ public class GuessingGame {
                         break;
                     }
                 }
-                  playAgain(getInput.next());
+                playAgain(getInput.next());
             } catch (Exception e) {
                 System.out.println("Please enter a Guess between 1- 20. GAME OVER!");
+                toggleWinOrLose = true;
             }
         }
+
     }
     public static String startGame() {
         return "Hello! What is your name fellow traveler?\nSign your soul away here...";
