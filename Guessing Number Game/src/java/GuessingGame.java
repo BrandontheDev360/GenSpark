@@ -3,11 +3,13 @@ import java.util.Scanner;
 import java.util.Random;
 
 public class GuessingGame {
+    // variables
     private static int guess = 0;
     private static final Random rand = new Random();
     private static int randomNumber = rand.nextInt(20);
     private static int numberOfTries = 0;
     private static boolean toggleWinOrLose = false;
+
     public static void main (String[] args) {
         String playAgain = "";
         Scanner getInput = new Scanner(System.in);
@@ -45,7 +47,7 @@ public class GuessingGame {
         return "Hello! What is your name fellow traveler?\nSign your soul away here...";
     }
 
-    // another function for the while loop
+    // while loop function goes here if you can get it to work.
 
     public static void playAgain(String playAgain) {
         if (!playAgain.equals("yes")) {
