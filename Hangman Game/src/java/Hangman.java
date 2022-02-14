@@ -5,6 +5,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Hangman {
+    private static int wrongGuess = 0;
     public static void main (String[] args) throws FileNotFoundException {
         Scanner scanner = new Scanner(new File("C:/GenSpark/Hangman Game/supersecretword.txt"));
         Scanner getInput = new Scanner(System.in);
@@ -17,14 +18,44 @@ public class Hangman {
         System.out.println(hangManWord);
         ArrayList<Character> guesses = new ArrayList<>();
         boolean toggleWinOrLose = true;
-        while (toggleWinOrLose) {
+        while (toggleWinOrLose || wrongGuess == 6) {
             playerGuess(getInput, hangManWord, guesses);
-            printWordState(hangManWord, guesses);
-
+            System.out.println("HANGMAN\n+----------+\n           |\n           |\n          ===");
+            if (wrongGuess >= 1) {
+                System.out.println("           O");
+            }
+            if (wrongGuess >= 2) {
+                System.out.print("         \\ ");
+                if (wrongGuess >= 3) {
+                    System.out.println("  /");
+                } else {
+                    System.out.println("");
+                }
+            }
+            if (wrongGuess >= 4) {
+                System.out.println("           |");
+            }
+            if (wrongGuess >= 5) {
+                System.out.print("         / ");
+                if (wrongGuess >=6 ) {
+                    System.out.print("  \\\n");
+                    System.out.println("You lose!");
+                    break;
+                } else {
+                    System.out.println("");
+                }
+            }
+            if (!playerGuess(getInput, hangManWord, guesses)) {
+                wrongGuess++;
+            }
+            if (currentLetter(hangManWord, guesses)) {
+                System.out.println("Winner Winner Chicken Dinner!");
+                toggleWinOrLose = false;
+            }
         }
     }
 
-    public static boolean printWordState(String hangManWord, ArrayList<Character> guesses) {
+    public static boolean currentLetter(String hangManWord, ArrayList<Character> guesses) {
         int correctGuess = 0;
         for (int i = 0; i < hangManWord.length(); i++) {
             if (guesses.contains(hangManWord.charAt(i))) {
@@ -38,10 +69,11 @@ public class Hangman {
         return (hangManWord.length() == correctGuess);
     }
 
-    public static void playerGuess(Scanner getInput, String hangManWord, ArrayList<Character> guesses) {
+    public static boolean playerGuess(Scanner getInput, String hangManWord, ArrayList<Character> guesses) {
         System.out.println("Please guess a letter.");
         String letterGuess = getInput.nextLine();
         guesses.add(letterGuess.charAt(0));
+        return hangManWord.contains(letterGuess);
     }
 
 }
