@@ -39,7 +39,7 @@ public class Hangman {
                     System.out.print("         / ");
                     if (wrongGuess >= 6) {
                         System.out.print("  \\\n");
-                        System.out.println("You lose!");
+                        System.out.println("You lose!\nThe word was " + hangManWord + ".");
                         break;
                     } else {
                         System.out.println("");
