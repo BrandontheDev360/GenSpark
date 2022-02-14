@@ -10,47 +10,51 @@ public class Hangman {
         Scanner scanner = new Scanner(new File("C:/GenSpark/Hangman Game/supersecretword.txt"));
         Scanner getInput = new Scanner(System.in);
         ArrayList<String> wordList = new ArrayList<>();
-        while(scanner.hasNext()) {
+        while (scanner.hasNext()) {
             wordList.add(scanner.nextLine());
         }
         Random rand = new Random();
         String hangManWord = wordList.get(rand.nextInt(wordList.size()));
-        System.out.println(hangManWord);
+        // System.out.println(hangManWord);
         ArrayList<Character> guesses = new ArrayList<>();
         boolean toggleWinOrLose = true;
-        while (toggleWinOrLose || wrongGuess == 6) {
-            System.out.println("HANGMAN\n+----------+\n           |\n           |\n          ===");
-            if (wrongGuess >= 1) {
-                System.out.println("           O");
-            }
-            if (wrongGuess >= 2) {
-                System.out.print("         \\ ");
-                if (wrongGuess >= 3) {
-                    System.out.println("  /");
-                } else {
-                    System.out.println("");
+        try {
+            while (toggleWinOrLose || wrongGuess == 6) {
+                System.out.println("HANGMAN\n+----------+\n           |\n           |\n          ===");
+                if (wrongGuess >= 1) {
+                    System.out.println("           O");
+                }
+                if (wrongGuess >= 2) {
+                    System.out.print("         \\ ");
+                    if (wrongGuess >= 3) {
+                        System.out.println("  /");
+                    } else {
+                        System.out.println("");
+                    }
+                }
+                if (wrongGuess >= 4) {
+                    System.out.println("           |");
+                }
+                if (wrongGuess >= 5) {
+                    System.out.print("         / ");
+                    if (wrongGuess >= 6) {
+                        System.out.print("  \\\n");
+                        System.out.println("You lose!");
+                        break;
+                    } else {
+                        System.out.println("");
+                    }
+                }
+                if (!playerGuess(getInput, hangManWord, guesses)) {
+                    wrongGuess++;
+                }
+                if (currentLetter(hangManWord, guesses)) {
+                    System.out.println("Winner Winner Chicken Dinner!");
+                    toggleWinOrLose = false;
                 }
             }
-            if (wrongGuess >= 4) {
-                System.out.println("           |");
-            }
-            if (wrongGuess >= 5) {
-                System.out.print("         / ");
-                if (wrongGuess >=6 ) {
-                    System.out.print("  \\\n");
-                    System.out.println("You lose!");
-                    break;
-                } else {
-                    System.out.println("");
-                }
-            }
-            if (!playerGuess(getInput, hangManWord, guesses)) {
-                wrongGuess++;
-            }
-            if (currentLetter(hangManWord, guesses)) {
-                System.out.println("Winner Winner Chicken Dinner!");
-                toggleWinOrLose = false;
-            }
+        } catch (Exception e) {
+            e.getMessage();
         }
     }
 
