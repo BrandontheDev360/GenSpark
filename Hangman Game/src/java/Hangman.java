@@ -20,7 +20,7 @@ public class Hangman {
         boolean toggleWinOrLose = true;
         try {
             while (toggleWinOrLose || wrongGuess == 6) {
-                System.out.println("HANGMAN\n+----------+\n           |\n           |\n          ===");
+                System.out.println("        HANGMAN\n+----------+\n           |\n           |\n          ===");
                 if (wrongGuess >= 1) {
                     System.out.println("           O");
                 }
@@ -49,7 +49,7 @@ public class Hangman {
                     wrongGuess++;
                 }
                 if (currentLetter(hangManWord, guesses)) {
-                    System.out.println("Winner Winner Chicken Dinner!");
+                    System.out.println("Winner Winner Chicken Dinner!\nThe word was " + hangManWord);
                     toggleWinOrLose = false;
                 }
             }
