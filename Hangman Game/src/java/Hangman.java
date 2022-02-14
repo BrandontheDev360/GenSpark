@@ -19,7 +19,6 @@ public class Hangman {
         ArrayList<Character> guesses = new ArrayList<>();
         boolean toggleWinOrLose = true;
         while (toggleWinOrLose || wrongGuess == 6) {
-            playerGuess(getInput, hangManWord, guesses);
             System.out.println("HANGMAN\n+----------+\n           |\n           |\n          ===");
             if (wrongGuess >= 1) {
                 System.out.println("           O");
