@@ -39,7 +39,7 @@ public class Hangman {
                     System.out.print("         / ");
                     if (wrongGuess >= 6) {
                         System.out.print("  \\\n");
-                        System.out.println("You lose!\nThe word was " + hangManWord + ".");
+                        System.out.println("You died!\nThe word was " + hangManWord + ".");
                         break;
                     } else {
                         System.out.println("");
@@ -49,12 +49,17 @@ public class Hangman {
                     wrongGuess++;
                 }
                 if (currentLetter(hangManWord, guesses)) {
-                    System.out.println("Winner Winner Chicken Dinner!\nThe word was " + hangManWord);
+                    System.out.println("Winner Winner Chicken Dinner!\nThe word was " + hangManWord + ".");
                     toggleWinOrLose = false;
                 }
+                String eachGuess = "";
+                for (var x : guesses) {
+                    eachGuess += x;
+                }
+                System.out.print("Your letter guesses: " + eachGuess + "\n");
             }
         } catch (Exception e) {
-            e.getMessage();
+            System.out.println(e.getMessage());
         }
     }
 
@@ -73,7 +78,7 @@ public class Hangman {
     }
 
     public static boolean playerGuess(Scanner getInput, String hangManWord, ArrayList<Character> guesses) {
-        System.out.println("Please guess a letter.");
+        System.out.println("\nPlease guess a letter.");
         String letterGuess = getInput.nextLine();
         guesses.add(letterGuess.charAt(0));
         return hangManWord.contains(letterGuess);
