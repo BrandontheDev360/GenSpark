@@ -13,8 +13,6 @@ public class Land {
     public static String[] row1 = land[0];
     public static String[] row2 = land[2];
     public static String[] row3 = land[4];
-    public static void main(String[] args) {
-    }
     public Land() {
     }
         public static void printLand(String[][] land){

@@ -1,23 +1,21 @@
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Objects;
+
 import java.util.Scanner;
 
 public class Game {
     // variables
-    private static String playerMovement;
     private static boolean toggleWinOrLose = true;
     private static Scanner playerInput = new Scanner(System.in);
+    private static String playerMovement;
     private static Human human1 = new Human(10);
     private static Goblin goblin1 = new Goblin(10);
 
     public static void main(String[] args) {
-        prologueToGame();
-            Land.row1[2] = human1.getHumanIcon();
-            Land.row3[2] = goblin1.getGoblinIcon();
-            Land.printLand(Land.land);
-            System.out.println("\nPlease press WASD to move.");
             try {
+                prologueToGame();
+                Land.row1[2] = human1.getHumanIcon();
+                Land.row3[2] = goblin1.getGoblinIcon();
+                Land.printLand(Land.land);
+                System.out.println("\nPlease press WASD to move.");
                 while (toggleWinOrLose) {
                     playerMovement = String.valueOf(playerInput.nextLine().charAt(0));
                     // Row 1 check for H
@@ -28,9 +26,10 @@ public class Game {
                     if (human1.getHealth() > 0 && goblin1.getHealth() > 0) {
                         checkRange();
                     }
+
                 }
             } catch (Exception e) {
-                e.getMessage();
+                System.out.println(e.getMessage());
             }
         }
 
@@ -44,21 +43,21 @@ public class Game {
 
     public static void checkRange() {
         while (Land.row2[2].equals("H") || Land.row3[0].equals("H") || Land.row3[4].equals("H") && human1.getHealth() > 0 && goblin1.getHealth() > 0) {
-            if (Land.row2[2].equals("H") || Land.row3[0].equals("H") || Land.row3[2].equals("H") || Land.row3[4].equals("H")) {
                 System.out.println("You're in range to attack the goblin");
                 System.out.println("Type out attack to attack");
                 if (playerInput.next().equalsIgnoreCase("attack")) {
                     human1.humanAttack(goblin1);
                     if (human1.getHealth() <= 0) {
                         System.out.println("You have died.\nGame Over.");
+                        toggleWinOrLose = false;
                         break;
                     }
                     if (goblin1.getHealth() <= 0) {
                         System.out.println("You have slain the goblin.\nYou win!");
+                        toggleWinOrLose = false;
                         break;
                     }
                 }
-            }
         }
     }
 
@@ -94,38 +93,38 @@ public class Game {
     }
 
     public static void row2Check() {
-        for (int i = 0; i < Land.row2.length; i++) {
-            if (Land.row2[i].contains("H")) {
-                if (playerMovement.equalsIgnoreCase("W")) {
-                    Land.row1[i] = human1.getHumanIcon();
-                    Land.row2[i] = " ";
-                    playerMovement = "";
-                    Land.printLand(Land.land);
-                    break;
-                }
-                if (playerMovement.equalsIgnoreCase("S") && Land.row2[i].equals(" ")) {
-                    Land.row2[i] = human1.getHumanIcon();
-                    Land.row1[i] = " ";
-                    playerMovement = "";
-                    Land.printLand(Land.land);
-                    break;
-                }
-                if (playerMovement.equalsIgnoreCase("A")) {
-                    Land.row2[i - 2] = human1.getHumanIcon();
-                    Land.row2[i] = " ";
-                    playerMovement = "";
-                    Land.printLand(Land.land);
-                    break;
-                }
-                if (playerMovement.equalsIgnoreCase("D")) {
-                    Land.row2[i + 2] = human1.getHumanIcon();
-                    Land.row2[i] = " ";
-                    playerMovement = "";
-                    Land.printLand(Land.land);
-                    break;
+            for (int i = 0; i < Land.row2.length; i++) {
+                if (Land.row2[i].contains("H")) {
+                    if (playerMovement.equalsIgnoreCase("W")) {
+                        Land.row1[i] = human1.getHumanIcon();
+                        Land.row2[i] = " ";
+                        playerMovement = "";
+                        Land.printLand(Land.land);
+                        break;
+                    }
+                    if (playerMovement.equalsIgnoreCase("S") && Land.row2[i].equals(" ")) {
+                        Land.row2[i] = human1.getHumanIcon();
+                        Land.row1[i] = " ";
+                        playerMovement = "";
+                        Land.printLand(Land.land);
+                        break;
+                    }
+                    if (playerMovement.equalsIgnoreCase("A")) {
+                        Land.row2[i - 2] = human1.getHumanIcon();
+                        Land.row2[i] = " ";
+                        playerMovement = "";
+                        Land.printLand(Land.land);
+                        break;
+                    }
+                    if (playerMovement.equalsIgnoreCase("D")) {
+                        Land.row2[i + 2] = human1.getHumanIcon();
+                        Land.row2[i] = " ";
+                        playerMovement = "";
+                        Land.printLand(Land.land);
+                        break;
+                    }
                 }
             }
-        }
     }
 
 }

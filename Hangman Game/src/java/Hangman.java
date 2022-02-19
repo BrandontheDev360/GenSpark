@@ -20,7 +20,7 @@ public class Hangman {
         boolean toggleWinOrLose = true;
         try {
             while (toggleWinOrLose || wrongGuess == 6) {
-                System.out.println("        HANGMAN\n+----------+\n           |\n           |\n          ===");
+                startGame();
                 if (wrongGuess >= 1) {
                     System.out.println("           O");
                 }
@@ -61,6 +61,10 @@ public class Hangman {
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
+    }
+
+    public static void startGame() {
+        System.out.println("        HANGMAN\n+----------+\n           |\n           |\n          ===");
     }
 
     public static boolean currentLetter(String hangManWord, ArrayList<Character> guesses) {
