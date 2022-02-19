@@ -29,7 +29,7 @@ public class Game {
 
                 }
             } catch (Exception e) {
-                System.out.println(e.getMessage());
+                System.out.println("You exited the maze.");
             }
         }
 
@@ -38,11 +38,15 @@ public class Game {
     public static void prologueToGame() {
         System.out.println("Welcome to Human Vs Goblins\nYou will spawn in a maze as a human.\n" +
                 "To walk please use the WASD.\nW = Up\nA = Left\nS = Down\nD = Right\n" +
-                "Also to initiate combat with the goblin press attack once near goblin.");
+                "Also to initiate combat with the goblin press attack once near goblin.\n" +
+                "**************" +
+                "\n| H = Human  " +
+                "|\n| G = Goblin |" +
+                "\n**************");
     }
 
     public static void checkRange() {
-        while (Land.row2[2].equals("H") || Land.row3[0].equals("H") || Land.row3[4].equals("H") && human1.getHealth() > 0 && goblin1.getHealth() > 0) {
+        while (Land.row2[2].equals("H") || Land.row3[0].equals("H") || Land.row3[4].equals("H")) {
                 System.out.println("You're in range to attack the goblin");
                 System.out.println("Type out attack to attack");
                 if (playerInput.next().equalsIgnoreCase("attack")) {
@@ -102,7 +106,7 @@ public class Game {
                         Land.printLand(Land.land);
                         break;
                     }
-                    if (playerMovement.equalsIgnoreCase("S") && Land.row2[i].equals(" ")) {
+                    if (playerMovement.equalsIgnoreCase("S")) {
                         Land.row2[i] = human1.getHumanIcon();
                         Land.row1[i] = " ";
                         playerMovement = "";
@@ -125,6 +129,6 @@ public class Game {
                     }
                 }
             }
-    }
+        }
 
 }
