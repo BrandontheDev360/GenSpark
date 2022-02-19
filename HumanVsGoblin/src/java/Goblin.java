@@ -1,13 +1,17 @@
 public class Goblin {
     private int health;
+    private String goblinIcon = "G";
 
     public Goblin() {
-        System.out.println(this);
     }
 
     public Goblin(int health) {
         setHealth(health);
-        System.out.println(this);
+    }
+
+    @Override
+    public String toString() {
+        return "Goblin = { health = " + getHealth() + " }";
     }
 
     public void setHealth(int health) {
@@ -18,14 +22,21 @@ public class Goblin {
         return this.health;
     }
 
-    public Human goblinAttack(Human human) {
-        int getRandomValue = 0;
+    public String getGoblinIcon() {
+        return this.goblinIcon;
+    }
+
+    public void goblinAttack(Human human) {
+        int getRandomDmg = 0;
         int min = 1;
         int max = 10;
         for (int i = min; i <= max; i++ ) {
-            getRandomValue = (int) (Math.random() * (max - min)) + min;
+            getRandomDmg = (int) (Math.random() * (max - min)) + min;
         }
-        human.setHealth((int) (human.getHealth() - getRandomValue));
-        return human;
+        human.setHealth(human.getHealth() - getRandomDmg);
+        System.out.println("The goblin attacked the human!");
+        if (human.getHealth() > 0) {
+            System.out.println("Human has remaining health. Human's Health: " + human.getHealth());
+        }
     }
 }
