@@ -4,11 +4,13 @@ import java.util.Objects;
 import java.util.Scanner;
 
 public class Game {
+    // variables
     private static String playerMovement;
     private static boolean toggleWinOrLose = true;
     private static Scanner playerInput = new Scanner(System.in);
     private static Human human1 = new Human(10);
     private static Goblin goblin1 = new Goblin(10);
+
     public static void main(String[] args) {
         prologueToGame();
             Land.row1[2] = human1.getHumanIcon();
@@ -17,70 +19,12 @@ public class Game {
             System.out.println("\nPlease press WASD to move.");
             try {
                 while (toggleWinOrLose) {
-                    // Row 1 check for H
                     playerMovement = String.valueOf(playerInput.nextLine().charAt(0));
-                    for (int i = 0; i < Land.row1.length; i++) {
-                        if (Land.row1[i].contains("H")) {
-                            // Down
-                            if (playerMovement.equalsIgnoreCase("S")) {
-                                Land.row2[i] = human1.getHumanIcon();
-                                Land.row1[i] = " ";
-                                playerMovement = "";
-                                Land.printLand(Land.land);
-                                break;
-                            }
-                            // Left
-                            if (playerMovement.equalsIgnoreCase("A")) {
-                                Land.row1[i - 2] = human1.getHumanIcon();
-                                Land.row1[i] = " ";
-                                playerMovement = "";
-                                Land.printLand(Land.land);
-                                break;
-                            }
-                            // Right
-                            if (playerMovement.equalsIgnoreCase("D")) {
-                                Land.row1[i + 2] = human1.getHumanIcon();
-                                Land.row1[i] = " ";
-                                playerMovement = "";
-                                Land.printLand(Land.land);
-                                break;
-                            }
-                        }
-                    }
+                    // Row 1 check for H
+                    row1Check();
                     checkRange();
                     // Checks Row 2
-                        for (int i = 0; i < Land.row2.length; i++) {
-                            if (Land.row2[i].contains("H")) {
-                                if (playerMovement.equalsIgnoreCase("W")) {
-                                    Land.row1[i] = human1.getHumanIcon();
-                                    Land.row2[i] = " ";
-                                    playerMovement = "";
-                                    Land.printLand(Land.land);
-                                    break;
-                                }
-                                if (playerMovement.equalsIgnoreCase("S") && Land.row2[i].equals(" ")) {
-                                    Land.row2[i] = human1.getHumanIcon();
-                                    Land.row1[i] = " ";
-                                    playerMovement = "";
-                                    Land.printLand(Land.land);
-                                    break;
-                                }
-                                if (playerMovement.equalsIgnoreCase("A")) {
-                                    Land.row2[i - 2] = human1.getHumanIcon();
-                                    Land.row2[i] = " ";
-                                    playerMovement = "";
-                                    Land.printLand(Land.land);
-                                    break;
-                                }
-                                if (playerMovement.equalsIgnoreCase("D")) {
-                                    Land.row2[i + 2] = human1.getHumanIcon();
-                                    Land.row2[i] = " ";
-                                    playerMovement = "";
-                                    Land.printLand(Land.land);
-                                    break;
-                                }
-                            }
-                        }
+                    row2Check();
                     if (human1.getHealth() > 0 && goblin1.getHealth() > 0) {
                         checkRange();
                     }
@@ -113,6 +57,72 @@ public class Game {
                         System.out.println("You have slain the goblin.\nYou win!");
                         break;
                     }
+                }
+            }
+        }
+    }
+
+    public static void row1Check() {
+        for (int i = 0; i < Land.row1.length; i++) {
+            if (Land.row1[i].contains("H")) {
+                // Down
+                if (playerMovement.equalsIgnoreCase("S")) {
+                    Land.row2[i] = human1.getHumanIcon();
+                    Land.row1[i] = " ";
+                    playerMovement = "";
+                    Land.printLand(Land.land);
+                    break;
+                }
+                // Left
+                if (playerMovement.equalsIgnoreCase("A")) {
+                    Land.row1[i - 2] = human1.getHumanIcon();
+                    Land.row1[i] = " ";
+                    playerMovement = "";
+                    Land.printLand(Land.land);
+                    break;
+                }
+                // Right
+                if (playerMovement.equalsIgnoreCase("D")) {
+                    Land.row1[i + 2] = human1.getHumanIcon();
+                    Land.row1[i] = " ";
+                    playerMovement = "";
+                    Land.printLand(Land.land);
+                    break;
+                }
+            }
+        }
+    }
+
+    public static void row2Check() {
+        for (int i = 0; i < Land.row2.length; i++) {
+            if (Land.row2[i].contains("H")) {
+                if (playerMovement.equalsIgnoreCase("W")) {
+                    Land.row1[i] = human1.getHumanIcon();
+                    Land.row2[i] = " ";
+                    playerMovement = "";
+                    Land.printLand(Land.land);
+                    break;
+                }
+                if (playerMovement.equalsIgnoreCase("S") && Land.row2[i].equals(" ")) {
+                    Land.row2[i] = human1.getHumanIcon();
+                    Land.row1[i] = " ";
+                    playerMovement = "";
+                    Land.printLand(Land.land);
+                    break;
+                }
+                if (playerMovement.equalsIgnoreCase("A")) {
+                    Land.row2[i - 2] = human1.getHumanIcon();
+                    Land.row2[i] = " ";
+                    playerMovement = "";
+                    Land.printLand(Land.land);
+                    break;
+                }
+                if (playerMovement.equalsIgnoreCase("D")) {
+                    Land.row2[i + 2] = human1.getHumanIcon();
+                    Land.row2[i] = " ";
+                    playerMovement = "";
+                    Land.printLand(Land.land);
+                    break;
                 }
             }
         }
