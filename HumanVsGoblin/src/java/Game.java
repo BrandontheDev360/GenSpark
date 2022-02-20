@@ -48,7 +48,7 @@ public class Game {
     public static void checkRange() {
         while (Land.row2[2].equals("H") || Land.row3[0].equals("H") || Land.row3[4].equals("H")) {
                 System.out.println("You're in range to attack the goblin.");
-                System.out.println("Type out 'attack' to attack");
+                System.out.println("Type out 'attack' to attack.");
                 if (playerInput.next().equalsIgnoreCase("attack")) {
                     human1.humanAttack(goblin1);
                     if (human1.getHealth() <= 0) {

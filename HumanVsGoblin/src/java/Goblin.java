@@ -23,7 +23,7 @@ public class Goblin {
         return this.goblinIcon;
     }
 
-    public void goblinAttack(Human human) {
+    public static void goblinAttack(Human human) {
         int getRandomDmg = 0;
         int min = 1;
         int max = 10;

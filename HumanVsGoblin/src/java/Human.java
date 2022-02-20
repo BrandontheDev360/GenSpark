@@ -23,7 +23,7 @@ public class Human {
         return this.humanIcon;
     }
 
-    public void humanAttack (Goblin goblin) {
+    public void humanAttack(Goblin goblin) {
         int getRandomValue = 0;
         int min = 1;
         int max = 10;
@@ -37,7 +37,7 @@ public class Human {
         }
         if (goblin.getHealth() > 0){
             System.out.println("You did " + getRandomValue + " damage to the Goblin. Goblin's Health: " + goblin.getHealth());
-            goblin.goblinAttack(this);
+            Goblin.goblinAttack(this);
         }
     }
 
