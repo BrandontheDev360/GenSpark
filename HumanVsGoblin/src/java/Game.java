@@ -107,8 +107,8 @@ public class Game {
                         break;
                     }
                     if (playerMovement.equalsIgnoreCase("S")) {
-                        Land.row2[i] = human1.getHumanIcon();
-                        Land.row1[i] = " ";
+                        Land.row3[i] = human1.getHumanIcon();
+                        Land.row2[i] = " ";
                         playerMovement = "";
                         Land.printLand(Land.land);
                         break;
