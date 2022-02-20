@@ -1,6 +1,4 @@
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
+import java.util.Arrays;
 
 public class Land {
     public static String[][] land = {
@@ -23,5 +21,10 @@ public class Land {
                     System.out.println();
             }
         }
+
+    @Override
+    public String toString() {
+        return "Land = { land = " + Arrays.deepToString(land) + " }";
+    }
 
 }
