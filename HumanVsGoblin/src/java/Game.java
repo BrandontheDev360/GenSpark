@@ -15,7 +15,7 @@ public class Game {
                 Land.row1[2] = human1.getHumanIcon();
                 Land.row3[2] = goblin1.getGoblinIcon();
                 Land.printLand(Land.land);
-                System.out.println("\nPlease press WASD to move.");
+                System.out.println("\n\tPlease press WASD to move.");
                 while (toggleWinOrLose) {
                     playerMovement = String.valueOf(playerInput.nextLine().charAt(0));
                     // Row 1 check for H
@@ -29,35 +29,35 @@ public class Game {
 
                 }
             } catch (Exception e) {
-                System.out.println("You exited the maze.");
+                System.out.println("\tYou exited the maze.");
             }
         }
 
     // use To uppercase at charAt(0) to grab first character and uppercase it to always equal the uppercase value
     // this will help with player input for movement
     public static void prologueToGame() {
-        System.out.println("Welcome to Human Vs Goblins\nYou will spawn in a maze as a human.\n" +
-                "To walk please use the WASD.\nW = Up\nA = Left\nS = Down\nD = Right\n" +
-                "Also to initiate combat with the goblin press attack once near goblin.\n" +
-                "**************" +
-                "\n| H = Human  " +
-                "|\n| G = Goblin |" +
-                "\n**************");
+        System.out.println("\tWelcome to Human Vs Goblins\n\tYou will spawn in a maze as a human.\n" +
+                "\tTo walk please use the WASD.\n\tW = Up\n\tA = Left\n\tS = Down\n\tD = Right\n" +
+                "\tAlso to initiate combat with the goblin press attack once near goblin.\n" +
+                "\t**************" +
+                "\n\t| H = Human  " +
+                "|\n\t| G = Goblin |" +
+                "\n\t**************");
     }
 
     public static void checkRange() {
         while (Land.row2[2].equals("H") || Land.row3[0].equals("H") || Land.row3[4].equals("H")) {
-                System.out.println("You're in range to attack the goblin.");
-                System.out.println("Type out 'attack' to attack.");
+                System.out.println("\tYou're in range to attack the goblin.");
+                System.out.println("\tType out 'attack' to attack.");
                 if (playerInput.next().equalsIgnoreCase("attack")) {
                     human1.humanAttack(goblin1);
                     if (human1.getHealth() <= 0) {
-                        System.out.println("You have died.\nGame Over.");
+                        System.out.println("\tYou have died.\n\tGame Over.");
                         toggleWinOrLose = false;
                         break;
                     }
                     if (goblin1.getHealth() <= 0) {
-                        System.out.println("You have slain the goblin.\nYou win!");
+                        System.out.println("\tYou have slain the goblin.\n\tYou win!");
                         toggleWinOrLose = false;
                         break;
                     }

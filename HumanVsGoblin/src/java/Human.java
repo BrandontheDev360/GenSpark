@@ -31,12 +31,12 @@ public class Human {
             getRandomValue = (int) (Math.random() * (max - min)) + min;
         }
         goblin.setHealth(goblin.getHealth() - getRandomValue);
-        System.out.println("The human attacked the goblin!");
+        System.out.println("\tThe human attacked the goblin!");
         if (goblin.getHealth() <= 0) {
-            System.out.println("The goblin has died.");
+            System.out.println("\tThe goblin has died.");
         }
         if (goblin.getHealth() > 0){
-            System.out.println("You did " + getRandomValue + " damage to the Goblin. Goblin's Health: " + goblin.getHealth());
+            System.out.println("\tYou did " + getRandomValue + " damage to the Goblin. Goblin's Health: " + goblin.getHealth());
             Goblin.goblinAttack(this);
         }
     }

@@ -16,7 +16,7 @@ public class Land {
         public static void printLand(String[][] land){
                 for (String[] row : land) {
                     for (String i : row) {
-                        System.out.print(i);
+                        System.out.print("\t" + i);
                 }
                     System.out.println();
             }
