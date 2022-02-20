@@ -26,12 +26,12 @@ public class Game {
                     if (human1.getHealth() > 0 && goblin1.getHealth() > 0) {
                         checkRange();
                     }
-
                 }
+                // playAgain(playerInput.nextLine());
             } catch (Exception e) {
                 System.out.println("\tYou exited the maze.");
             }
-        }
+    }
 
     // use To uppercase at charAt(0) to grab first character and uppercase it to always equal the uppercase value
     // this will help with player input for movement
@@ -130,5 +130,19 @@ public class Game {
                 }
             }
         }
+
+        /*
+        public static void playAgain(String playAgain) {
+            if (human1.getHealth() > 0 && goblin1.getHealth() <= 0) {
+                System.out.println("Do you want to play again? (yes or no)");
+                if (playAgain.equalsIgnoreCase("yes")) {
+                    toggleWinOrLose = true;
+                    goblin1.setHealth(10);
+                } else {
+                    toggleWinOrLose = false;
+                }
+            }
+        }
+         */
 
 }
