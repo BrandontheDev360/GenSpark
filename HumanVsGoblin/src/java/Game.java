@@ -4,10 +4,10 @@ import java.util.Scanner;
 public class Game {
     // variables
     private static boolean toggleWinOrLose = true;
-    private static Scanner playerInput = new Scanner(System.in);
+    private static final Scanner playerInput = new Scanner(System.in);
     private static String playerMovement;
-    private static Human human1 = new Human(10);
-    private static Goblin goblin1 = new Goblin(10);
+    private static final Human human1 = new Human(10);
+    private static final Goblin goblin1 = new Goblin(10);
 
     public static void main(String[] args) {
             try {
