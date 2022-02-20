@@ -36,7 +36,7 @@ public class Goblin {
         human.setHealth(human.getHealth() - getRandomDmg);
         System.out.println("The goblin attacked the human!");
         if (human.getHealth() > 0) {
-            System.out.println("Human has remaining health. Human's Health: " + human.getHealth());
+            System.out.println("You took " + getRandomDmg + ". Human's Health: " + human.getHealth());
         }
     }
 }

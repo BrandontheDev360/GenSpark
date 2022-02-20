@@ -39,7 +39,7 @@ public class Human {
             System.out.println("The goblin has died.");
         }
         if (goblin.getHealth() > 0){
-            System.out.println("Goblin has remaining health. Goblin's Health: " + goblin.getHealth());
+            System.out.println("You did " + getRandomValue + " damage to the Goblin. Goblin's Health: " + goblin.getHealth());
             goblin.goblinAttack(this);
         }
     }

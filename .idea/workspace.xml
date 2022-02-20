@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="51ea41ae-301e-4983-80cc-fdf523c64338" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HumanVsGoblin/src/java/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/HumanVsGoblin/src/java/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HumanVsGoblin/src/java/Land.java" beforeDir="false" afterPath="$PROJECT_DIR$/HumanVsGoblin/src/java/Land.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HumanVsGoblin/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HumanVsGoblin/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HumanVsGoblin/src/java/Goblin.java" beforeDir="false" afterPath="$PROJECT_DIR$/HumanVsGoblin/src/java/Goblin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HumanVsGoblin/src/java/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/HumanVsGoblin/src/java/Human.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HumanVsGoblin/Land.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HumanVsGoblin/Land.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +67,7 @@
       <recent name="C:\GenSpark\Guessing Number Game\src\java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Land">
+  <component name="RunManager" selected="Application.Game">
     <configuration name="Game" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Game" />
       <module name="HumanVsGoblin" />
@@ -116,8 +116,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Land" />
         <item itemvalue="Application.Game" />
+        <item itemvalue="Application.Land" />
         <item itemvalue="Application.Hangman" />
         <item itemvalue="Application.Human" />
         <item itemvalue="TestNG.GuessingGameTest" />
