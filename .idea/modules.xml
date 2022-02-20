@@ -5,7 +5,6 @@
       <module fileurl="file://$PROJECT_DIR$/Dragon-Cave/Dragon-Cave.iml" filepath="$PROJECT_DIR$/Dragon-Cave/Dragon-Cave.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/GenSpark.iml" filepath="$PROJECT_DIR$/.idea/GenSpark.iml" />
       <module fileurl="file://$PROJECT_DIR$/Guessing Number Game/Guessing Number Game.iml" filepath="$PROJECT_DIR$/Guessing Number Game/Guessing Number Game.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Hangman/Hangman.iml" filepath="$PROJECT_DIR$/Hangman/Hangman.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hangman Game/Hangman Game.iml" filepath="$PROJECT_DIR$/Hangman Game/Hangman Game.iml" />
       <module fileurl="file://$PROJECT_DIR$/HumanVsGoblin/HumanVsGoblin.iml" filepath="$PROJECT_DIR$/HumanVsGoblin/HumanVsGoblin.iml" />
     </modules>
