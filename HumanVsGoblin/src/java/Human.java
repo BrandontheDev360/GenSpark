@@ -2,9 +2,6 @@ public class Human {
     private int health;
     private String humanIcon = "H";
 
-    public Human() {
-    }
-
     public Human(int health) {
         setHealth(health);
     }

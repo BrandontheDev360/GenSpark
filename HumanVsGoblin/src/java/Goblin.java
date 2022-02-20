@@ -2,9 +2,6 @@ public class Goblin {
     private int health;
     private String goblinIcon = "G";
 
-    public Goblin() {
-    }
-
     public Goblin(int health) {
         setHealth(health);
     }
