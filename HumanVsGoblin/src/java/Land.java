@@ -2,11 +2,11 @@ import java.util.Arrays;
 
 public class Land {
     public static String[][] land = {
-            {" ", "|", " ", "|", " "},
+            {" ", "|", "H", "|", " "},
             {"-", "+", "-", "+", "-"},
             {" ", "|", " ", "|", " "},
             {"-", "+", "-", "+", "-"},
-            {" ", "|", " ", "|", " "}
+            {" ", "|", "G", "|", " "}
     };
     public static String[] row1 = land[0];
     public static String[] row2 = land[2];

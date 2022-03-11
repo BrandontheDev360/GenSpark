@@ -1,0 +1,16 @@
+
+	*******************
+	| Boarding Ticket |
+	*******************
+	Name: test again,
+	Email: testagain@gmail.com,
+	Phone Number: 234-234-5434,
+	Gender: Male,
+	Age: 43,
+	Origin: Los Angeles, CA,
+	Destination: Phoenix, AZ,
+	Departure Time: 03:00 pm,
+	Departure Date: 03-17-2022,
+	Boarding Pass ID: d96f6e18-fc68-40e5-9b2d-73afdb5b50c2,
+	Ticket Price: $79,
+	Estimated Time of Arrival: 85 minutes

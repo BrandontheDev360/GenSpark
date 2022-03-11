@@ -6,14 +6,12 @@ public class Game {
     private static boolean toggleWinOrLose = true;
     private static final Scanner playerInput = new Scanner(System.in);
     private static String playerMovement;
-    private static final Human human1 = new Human(10);
-    private static final Goblin goblin1 = new Goblin(10);
+    public static final Human human1 = new Human(10);
+    public static final Goblin goblin1 = new Goblin(10);
 
     public static void main(String[] args) {
             try {
                 prologueToGame();
-                Land.row1[2] = human1.getHumanIcon();
-                Land.row3[2] = goblin1.getGoblinIcon();
                 Land.printLand(Land.land);
                 System.out.println("\n\tPlease press WASD to move.");
                 while (toggleWinOrLose) {

@@ -1,0 +1,11 @@
+.date-picker > .text-field  {
+    -fx-alignment: center;
+}
+
+.combo-box > .list-cell {
+    -fx-alignment: center;
+}
+
+combo-box > .text-field {
+    -fx-alignment: center;
+}
