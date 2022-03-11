@@ -1,4 +1,4 @@
-# boarding_Pass_Project-genspark
+# Boarding Pass Project
 
 ## Description
-A group project for our full stack java development traing at genspark
+A group project for our full stack java development training at GenSpark.
