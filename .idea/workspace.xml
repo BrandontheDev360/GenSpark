@@ -5,49 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51ea41ae-301e-4983-80cc-fdf523c64338" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_17_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_win_17_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_17_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_win_17_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_17_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_win_17_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_17_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_win_17_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Boarding-Pass/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Boarding-Pass/ALL_TICKETS_GENERATED.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Boarding-Pass/Boarding-Pass.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Boarding-Pass/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Boarding-Pass/Your_Boarding_Ticket.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Boarding-Pass/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Boarding-Pass/src/main/java/com/example/boardingpassproject/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Boarding-Pass/src/main/java/com/example/boardingpassproject/Utils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Boarding-Pass/src/main/java/com/example/boardingpassproject/ViewController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Boarding-Pass/src/main/java/com/example/boardingpassproject/ViewTwoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Boarding-Pass/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Boarding-Pass/src/main/resources/com/example/boardingpass/hello-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Boarding-Pass/src/main/resources/com/example/boardingpassproject/view-2.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Boarding-Pass/src/main/resources/com/example/boardingpassproject/view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Boarding-Pass/src/main/resources/earthPlane.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Boarding-Pass/src/main/resources/plane.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Boarding-Pass/src/main/resources/sky.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Boarding-Pass/src/main/resources/styleSheet.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dragon-Cave/Dragon-Cave.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Dragon-Cave/Dragon-Cave.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HumanVsGoblin/src/java/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/HumanVsGoblin/src/java/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HumanVsGoblin/src/java/Land.java" beforeDir="false" afterPath="$PROJECT_DIR$/HumanVsGoblin/src/java/Land.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HumanVsGoblin/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HumanVsGoblin/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HumanVsGoblin/Land.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HumanVsGoblin/Land.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ALL_TICKETS_GENERATED.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ALL_TICKETS_GENERATED.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Boarding-Pass/src/main/resources/com/example/boardingpassproject/view-2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Boarding-Pass/src/main/resources/com/example/boardingpassproject/view-2.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Your_Boarding_Ticket.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Your_Boarding_Ticket.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

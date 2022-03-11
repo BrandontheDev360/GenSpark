@@ -8,12 +8,12 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="366.0" prefWidth="425.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.boardingpassproject.ViewTwoController">
    <children>
-      <Label fx:id="ticket" prefHeight="325.0" prefWidth="425.0" style="-fx-background-color: black;" textFill="WHITE" />
-      <ImageView fx:id="ticketImage" fitHeight="173.0" fitWidth="180.0" layoutX="221.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true" />
-      <Button layoutX="19.0" layoutY="333.0" mnemonicParsing="false" onAction="#switchToScene1" opacity="0.4" prefHeight="15.0" prefWidth="388.0" style="-fx-background-color: gray;" text="Generate Another Ticket" textFill="WHITE">
+      <Button layoutX="19.0" layoutY="333.0" mnemonicParsing="false" onAction="#switchToScene1" opacity="0.4" prefHeight="15.0" prefWidth="388.0" style="-fx-background-color: #ffc107;" text="Generate Another Ticket">
          <font>
             <Font size="12.0" />
          </font>
       </Button>
+      <Label fx:id="ticket" prefHeight="325.0" prefWidth="425.0" style="-fx-background-color: black;" textFill="WHITE" />
+      <ImageView fx:id="ticketImage" fitHeight="173.0" fitWidth="180.0" layoutX="221.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true" />
    </children>
 </AnchorPane>
