@@ -71,14 +71,16 @@ public class Utils {
     }
 
     public static int findTravelTime(String depart, String arrival) {
-        int index = locationCombos.indexOf(depart + " : " + arrival);
-        if (index != -1) {
-            return travelTime[index];
+        int indexDepartArrival = locationCombos.indexOf(depart + " : " + arrival);
+        int indexArrivalDepart = locationCombos.indexOf(arrival + " : " + depart);
+        if (indexDepartArrival != -1) {
+            return travelTime[indexDepartArrival];
+        } else if (indexArrivalDepart != -1) {
+            return travelTime[indexArrivalDepart];
+        } else {
+            System.out.println("No information available on ETA for origin to destination");
+            return -1;
         }
-        index = locationCombos.indexOf(arrival + " : " + depart);
-        if (index != -1) {
-            return travelTime[index];
-        } else return -1;
     }
 
     public static void createFileForStoringAllTickets() {

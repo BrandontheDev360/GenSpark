@@ -2,15 +2,15 @@
 	*******************
 	| Boarding Ticket |
 	*******************
-	Name: fasdfasdf,
-	Email: asdfads@gmail.com,
-	Phone Number: 664-523-4345,
+	Name: Brandon,
+	Email: brando1123@gmail.com,
+	Phone Number: 432-423-2323,
 	Gender: Male,
-	Age: 34,
-	Origin: Chicago, IL,
-	Destination: Los Angeles, CA,
-	Departure Time: 10:30 am,
-	Departure Date: 03-30-2022,
-	Boarding Pass ID: fb02c882-75bf-49eb-bc38-a7dc2046ed67,
-	Ticket Price: $162,
-	Estimated Time of Arrival: 240 minutes
+	Age: 23,
+	Origin: New York, NY,
+	Destination: Philadelphia, PA,
+	Departure Time: 12:00 am,
+	Departure Date: 03-16-2022,
+	Boarding Pass ID: 7a5809bc-eca6-44ab-9ee5-6d527a5bc0c9,
+	Ticket Price: $150,
+	Estimated Time of Arrival: 60 minutes

@@ -94,6 +94,7 @@ public class ViewController {
         stage.getIcons().add(new Image("plane.png"));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setScene(scene);
+        stage.setResizable(false);
         prevStage.close();
         stage.show();
     }

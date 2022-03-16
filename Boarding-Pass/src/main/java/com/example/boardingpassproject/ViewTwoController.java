@@ -43,7 +43,7 @@ public class ViewTwoController {
         ticket.setText(formatList());
     }
 
-    public void switchToScene1(ActionEvent event) throws IOException {
+    public void switchToScene1() throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("view.fxml"));
         Stage stage = new Stage();
         Scene scene = new Scene(fxmlLoader.load());
@@ -52,6 +52,7 @@ public class ViewTwoController {
         stage.setTitle("Ticket Generator");
         stage.getIcons().add(new Image("plane.png"));
         stage.setScene(scene);
+        stage.setResizable(false);
         stage.show();
     }
     

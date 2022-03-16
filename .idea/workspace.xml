@@ -7,7 +7,9 @@
     <list default="true" id="51ea41ae-301e-4983-80cc-fdf523c64338" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ALL_TICKETS_GENERATED.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ALL_TICKETS_GENERATED.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boarding-Pass/src/main/resources/com/example/boardingpassproject/view-2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Boarding-Pass/src/main/resources/com/example/boardingpassproject/view-2.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Boarding-Pass/src/main/java/com/example/boardingpassproject/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/Boarding-Pass/src/main/java/com/example/boardingpassproject/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Boarding-Pass/src/main/java/com/example/boardingpassproject/ViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Boarding-Pass/src/main/java/com/example/boardingpassproject/ViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Boarding-Pass/src/main/java/com/example/boardingpassproject/ViewTwoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Boarding-Pass/src/main/java/com/example/boardingpassproject/ViewTwoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Your_Boarding_Ticket.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Your_Boarding_Ticket.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +61,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="17" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/HumanVsGoblin/src/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../boarding_Pass_Project-genspark" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />

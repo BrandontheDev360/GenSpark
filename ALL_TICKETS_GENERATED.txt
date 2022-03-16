@@ -174,3 +174,83 @@
 	Boarding Pass ID: b6306216-63e8-4b1b-9be9-a12e25def173,
 	Ticket Price: $132,
 	Estimated Time of Arrival: 190 minutes
+
+	*******************
+	| Boarding Ticket |
+	*******************
+	Name: Syerra,
+	Email: syerra@gmail.com,
+	Phone Number: 123-423-3243,
+	Gender: Male,
+	Age: 34,
+	Origin: Houston, TX,
+	Destination: Los Angeles, CA,
+	Departure Time: 12:00 am,
+	Departure Date: 03-23-2022,
+	Boarding Pass ID: 0ef4242b-8913-4fa6-a4e4-3664df46312b,
+	Ticket Price: $250,
+	Estimated Time of Arrival: 190 minutes
+
+	*******************
+	| Boarding Ticket |
+	*******************
+	Name: Syerra,
+	Email: syerra@gmail.com,
+	Phone Number: 453-232-4324,
+	Gender: Female,
+	Age: 43,
+	Origin: Houston, TX,
+	Destination: New York, NY,
+	Departure Time: 07:30 pm,
+	Departure Date: 03-16-2022,
+	Boarding Pass ID: fcc89180-d5d5-42ff-abbd-c10dd14cd54c,
+	Ticket Price: $156,
+	Estimated Time of Arrival: 250 minutes
+
+	*******************
+	| Boarding Ticket |
+	*******************
+	Name: Skylar,
+	Email: skylar@gmail.com,
+	Phone Number: 345-232-4543,
+	Gender: Female,
+	Age: 43,
+	Origin: Houston, TX,
+	Destination: New York, NY,
+	Departure Time: 07:30 pm,
+	Departure Date: 03-16-2022,
+	Boarding Pass ID: 843fcbc0-820a-452c-bcc2-20a5a69827e7,
+	Ticket Price: $156,
+	Estimated Time of Arrival: 250 minutes
+
+	*******************
+	| Boarding Ticket |
+	*******************
+	Name: Meow,
+	Email: mewo@gmail.com,
+	Phone Number: 534-564-5234,
+	Gender: Female,
+	Age: 23,
+	Origin: Chicago, IL,
+	Destination: Los Angeles, CA,
+	Departure Time: 03:00 pm,
+	Departure Date: 03-30-2022,
+	Boarding Pass ID: 460e88d4-f338-4735-82aa-78eaa60a35e0,
+	Ticket Price: $159,
+	Estimated Time of Arrival: 240 minutes
+
+	*******************
+	| Boarding Ticket |
+	*******************
+	Name: Brandon,
+	Email: brando1123@gmail.com,
+	Phone Number: 432-423-2323,
+	Gender: Male,
+	Age: 23,
+	Origin: New York, NY,
+	Destination: Philadelphia, PA,
+	Departure Time: 12:00 am,
+	Departure Date: 03-16-2022,
+	Boarding Pass ID: 7a5809bc-eca6-44ab-9ee5-6d527a5bc0c9,
+	Ticket Price: $150,
+	Estimated Time of Arrival: 60 minutes
