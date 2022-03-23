@@ -17,15 +17,18 @@ public class Game {
                 while (toggleWinOrLose) {
                     playerMovement = String.valueOf(playerInput.nextLine().charAt(0));
                     // Row 1 check for H
+                    for (int i = 0; i < Land.land.length; i++) {
+                        Land.getColumn(i, Land.land);
+                    }
                     row1Check();
                     checkRange();
                     // Checks Row 2
                     row2Check();
+                    playerMovement = "";
                     if (human1.getHealth() > 0 && goblin1.getHealth() > 0) {
                         checkRange();
                     }
                 }
-                // playAgain(playerInput.nextLine());
             } catch (Exception e) {
                 System.out.println("\tYou exited the maze.");
             }
@@ -45,8 +48,8 @@ public class Game {
 
     public static void checkRange() {
         while (Land.row2[2].equals("H") || Land.row3[0].equals("H") || Land.row3[4].equals("H")) {
-                System.out.println("\tYou're in range to attack the goblin.");
-                System.out.println("\tType out \"attack\" to attack.");
+            System.out.println("\tYou're in range to attack the goblin.");
+            System.out.println("\tType out \"attack\" to attack.");
                 if (playerInput.next().equalsIgnoreCase("attack")) {
                     human1.humanAttack(goblin1);
                     if (human1.getHealth() <= 0) {
@@ -131,13 +134,14 @@ public class Game {
 
         /*
         public static void playAgain(String playAgain) {
-            if (human1.getHealth() > 0 && goblin1.getHealth() <= 0) {
+            if (human1.getHealth() > 0) {
                 System.out.println("Do you want to play again? (yes or no)");
                 if (playAgain.equalsIgnoreCase("yes")) {
                     toggleWinOrLose = true;
                     goblin1.setHealth(10);
                 } else {
                     toggleWinOrLose = false;
+                    return;
                 }
             }
         }

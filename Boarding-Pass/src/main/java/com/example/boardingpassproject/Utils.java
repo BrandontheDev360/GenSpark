@@ -38,7 +38,6 @@ public class Utils {
                 return false;
             }
         } else {
-            System.out.println("Phone number is null or empty");
             return false;
         }
     }

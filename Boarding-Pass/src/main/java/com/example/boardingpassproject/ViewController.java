@@ -162,7 +162,6 @@ public class ViewController {
     public void checkFormContents() throws IOException {
         errorMessage = "";
         // if error occurs set error msg visibility
-        Boolean error = false;
         if (name == null) {
             errorMessage = "You must enter a name";
             errorLabel.setVisible(true);
@@ -300,6 +299,7 @@ public class ViewController {
         return timeDiscount;
     }
 
+    // Switch Statement
     public int getSubTotal() {
         int eta = Utils.findTravelTime(origin, destination);
         float x = applyTimeDiscount();
@@ -315,7 +315,8 @@ public class ViewController {
             return 125 + (int) (125 * x);
         } else if (eta > 100) {
             return 100 + (int) (100 * x);
-        } return 75+ (int) (75 * x);
+        }
+        return 75+ (int) (75 * x);
     }
 
     public int getFinalPrice() {

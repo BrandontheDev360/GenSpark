@@ -3,14 +3,14 @@
 	| Boarding Ticket |
 	*******************
 	Name: Brandon,
-	Email: brando1123@gmail.com,
-	Phone Number: 432-423-2323,
+	Email: brandon124@gmail.com,
+	Phone Number: 232-123-4324,
 	Gender: Male,
 	Age: 23,
-	Origin: New York, NY,
-	Destination: Philadelphia, PA,
-	Departure Time: 12:00 am,
-	Departure Date: 03-16-2022,
-	Boarding Pass ID: 7a5809bc-eca6-44ab-9ee5-6d527a5bc0c9,
-	Ticket Price: $150,
-	Estimated Time of Arrival: 60 minutes
+	Origin: Los Angeles, CA,
+	Destination: Houston, TX,
+	Departure Time: 07:30 pm,
+	Departure Date: 03-24-2022,
+	Boarding Pass ID: eba00d24-4d50-4512-95de-47511116fceb,
+	Ticket Price: $130,
+	Estimated Time of Arrival: 190 minutes

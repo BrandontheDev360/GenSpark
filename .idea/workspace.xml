@@ -9,8 +9,14 @@
       <change beforePath="$PROJECT_DIR$/ALL_TICKETS_GENERATED.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ALL_TICKETS_GENERATED.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Boarding-Pass/src/main/java/com/example/boardingpassproject/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/Boarding-Pass/src/main/java/com/example/boardingpassproject/Utils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Boarding-Pass/src/main/java/com/example/boardingpassproject/ViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Boarding-Pass/src/main/java/com/example/boardingpassproject/ViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boarding-Pass/src/main/java/com/example/boardingpassproject/ViewTwoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Boarding-Pass/src/main/java/com/example/boardingpassproject/ViewTwoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Boarding-Pass/src/main/resources/com/example/boardingpassproject/view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Boarding-Pass/src/main/resources/com/example/boardingpassproject/view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hangman Game/src/java/Hangman.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hangman Game/src/java/Hangman.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HumanVsGoblin/src/java/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/HumanVsGoblin/src/java/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HumanVsGoblin/src/java/Land.java" beforeDir="false" afterPath="$PROJECT_DIR$/HumanVsGoblin/src/java/Land.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Your_Boarding_Ticket.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Your_Boarding_Ticket.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hangman Game/Hangman.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hangman Game/Hangman.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HumanVsGoblin/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HumanVsGoblin/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HumanVsGoblin/Land.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HumanVsGoblin/Land.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +68,7 @@
     <property name="jdk.selected.JAVA_MODULE" value="17" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/HumanVsGoblin/src/java" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.DirectoryMappings" />
@@ -131,9 +137,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.App" />
+        <item itemvalue="Application.Hangman" />
         <item itemvalue="Application.Game" />
         <item itemvalue="Application.App (1)" />
-        <item itemvalue="Application.Hangman" />
         <item itemvalue="Application.Land" />
       </list>
     </recent_temporary>

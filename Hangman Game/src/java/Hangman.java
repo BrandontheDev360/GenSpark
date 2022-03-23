@@ -78,7 +78,7 @@ public class Hangman {
             }
         }
         System.out.println();
-        return (hangManWord.length() == correctGuess);
+        return hangManWord.length() == correctGuess;
     }
 
     public static boolean playerGuess(Scanner getInput, String hangManWord, ArrayList<Character> guesses) {
