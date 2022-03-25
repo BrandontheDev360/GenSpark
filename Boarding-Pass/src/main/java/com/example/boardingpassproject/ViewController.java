@@ -66,7 +66,7 @@ public class ViewController {
     public String origin;
     public String destination;
     public String departureTime;
-    public String ticketData;
+    private  static String ticketData;
 
 
     // storing cities we fly to
@@ -220,11 +220,12 @@ public class ViewController {
         submitForm();
     }
 
-    public void submitForm() {
+    public void submitForm() throws IOException {
         // compile contents into files and generate ticket
         Utils.createTicket();
         Utils.createFileForStoringAllTickets();
         writeOverTicket();
+        switchToScene2();
         errorLabel.setVisible(false);
     }
 
@@ -250,7 +251,7 @@ public class ViewController {
             writer.close();
             allTicketsGenerated.add(ticketData);
             storeAllTicketsGenerated();  
-            switchToScene2();       
+
         } catch (IOException e) {
             System.out.println("Error occurred");
             e.printStackTrace();
@@ -259,9 +260,7 @@ public class ViewController {
 
     private static void storeAllTicketsGenerated() {
         try {
-            for (var eachTicket: allTicketsGenerated) {
-                Files.write(Paths.get("ALL_TICKETS_GENERATED.txt"), eachTicket.getBytes(), StandardOpenOption.APPEND);
-            }
+            Files.write(Paths.get("ALL_TICKETS_GENERATED.txt"), ticketData.getBytes(), StandardOpenOption.APPEND);
         } catch (IOException e) {
             e.printStackTrace();
         }

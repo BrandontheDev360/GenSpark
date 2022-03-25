@@ -286,3 +286,131 @@
 	Boarding Pass ID: eba00d24-4d50-4512-95de-47511116fceb,
 	Ticket Price: $130,
 	Estimated Time of Arrival: 190 minutes
+
+	*******************
+	| Boarding Ticket |
+	*******************
+	Name: TestBeforeAddTicket,
+	Email: testbefore@gmail.com,
+	Phone Number: 123-123-1234,
+	Gender: Male,
+	Age: 12,
+	Origin: Los Angeles, CA,
+	Destination: Philadelphia, PA,
+	Departure Time: 03:00 pm,
+	Departure Date: 03-30-2022,
+	Boarding Pass ID: 94bdb8b6-40c0-47ae-8ad8-7a1a05426665,
+	Ticket Price: $92,
+	Estimated Time of Arrival: 300 minutes
+
+	*******************
+	| Boarding Ticket |
+	*******************
+	Name: TestBeforeAddTicket,
+	Email: testbefore@gmail.com,
+	Phone Number: 123-123-1234,
+	Gender: Male,
+	Age: 12,
+	Origin: Los Angeles, CA,
+	Destination: Philadelphia, PA,
+	Departure Time: 03:00 pm,
+	Departure Date: 03-30-2022,
+	Boarding Pass ID: 94bdb8b6-40c0-47ae-8ad8-7a1a05426665,
+	Ticket Price: $92,
+	Estimated Time of Arrival: 300 minutes
+
+	*******************
+	| Boarding Ticket |
+	*******************
+	Name: TickAfterAddTicket,
+	Email: ticketafter@gmail.com,
+	Phone Number: 123-123-1234,
+	Gender: Female,
+	Age: 13,
+	Origin: Houston, TX,
+	Destination: San Diego, CA,
+	Departure Time: 12:00 am,
+	Departure Date: 03-28-2022,
+	Boarding Pass ID: 7b920d37-232f-4640-975c-4ead1b03ea83,
+	Ticket Price: $300,
+	Estimated Time of Arrival: 215 minutes
+
+	*******************
+	| Boarding Ticket |
+	*******************
+	Name: TicketBeforeTestAgain,
+	Email: ticketbefore@gmail.com,
+	Phone Number: 123-132-1234,
+	Gender: Other,
+	Age: 32,
+	Origin: Houston, TX,
+	Destination: San Jose, CA,
+	Departure Time: 10:30 am,
+	Departure Date: 03-28-2022,
+	Boarding Pass ID: 95c24617-58ed-4191-a488-b04cfcfc0a17,
+	Ticket Price: $189,
+	Estimated Time of Arrival: 260 minutes
+
+	*******************
+	| Boarding Ticket |
+	*******************
+	Name: TicketBeforeTestAgain,
+	Email: ticketbefore@gmail.com,
+	Phone Number: 123-132-1234,
+	Gender: Other,
+	Age: 32,
+	Origin: Houston, TX,
+	Destination: San Jose, CA,
+	Departure Time: 10:30 am,
+	Departure Date: 03-28-2022,
+	Boarding Pass ID: 95c24617-58ed-4191-a488-b04cfcfc0a17,
+	Ticket Price: $189,
+	Estimated Time of Arrival: 260 minutes
+
+	*******************
+	| Boarding Ticket |
+	*******************
+	Name: TicketAfter@gmail.com,
+	Email: ticketafter@gmail.com,
+	Phone Number: 234-234-2344,
+	Gender: Male,
+	Age: 12,
+	Origin: Los Angeles, CA,
+	Destination: San Jose, CA,
+	Departure Time: 03:00 pm,
+	Departure Date: 04-07-2022,
+	Boarding Pass ID: 4ee0e218-8a70-4eaa-a51f-4d82785b4b89,
+	Ticket Price: $39,
+	Estimated Time of Arrival: 75 minutes
+
+	*******************
+	| Boarding Ticket |
+	*******************
+	Name: RandomBefore,
+	Email: randombefore@gmail.com,
+	Phone Number: 123-123-2143,
+	Gender: Male,
+	Age: 54,
+	Origin: Phoenix, AZ,
+	Destination: San Diego, CA,
+	Departure Time: 03:00 pm,
+	Departure Date: 03-28-2022,
+	Boarding Pass ID: 72b7492c-f1a0-409c-b4ad-0d815b591276,
+	Ticket Price: $79,
+	Estimated Time of Arrival: 70 minutes
+
+	*******************
+	| Boarding Ticket |
+	*******************
+	Name: RandomAfter,
+	Email: randomAfter@gmail.com,
+	Phone Number: 534-645-2343,
+	Gender: Female,
+	Age: 23,
+	Origin: Chicago, IL,
+	Destination: San Diego, CA,
+	Departure Time: 12:00 am,
+	Departure Date: 03-31-2022,
+	Boarding Pass ID: b3fcffdc-3301-484e-84c5-eb2c05d169a1,
+	Ticket Price: $350,
+	Estimated Time of Arrival: 265 minutes
